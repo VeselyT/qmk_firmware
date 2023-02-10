@@ -72,8 +72,8 @@
 
 // the default. set it, use it, set it back.
 // US_INT // EN, BEPO, US_INT
-#define LANG_IS US_INT
-#define DEFAULT_LANG US_INT
+#define LANG_IS EN
+#define DEFAULT_LANG EN
 #define DEFAULT_LANG_NAME " us"
 
 // Enable a second locale, for another set of layers.
@@ -83,7 +83,7 @@
 
 // Choose a mod layer. Can be changed per layer.
 // TRNS, ALT, HRS_NAV HRM_GACS, HRM_SCAG, HRM_GASC, MIRYOKU_HRM_GASC
-#define MODS_ARE HRS_NAV
+#define MODS_ARE HRM_GACS
 #define DEFAULT_MODS MODS_ARE
 
 // Choose a thumb cluster.
@@ -93,16 +93,16 @@
 // for use with the hands down metals, maltron, and rsthd.
 // HD, HDA, HD_SIMPLE, TH_LTR, HD_DASH,
 // MIRYOKU_TR_LTR, MIRYOKU_LTR
-#define THUMBS_ARE DEFAULT
-#define DEFAULT_THUMBS DEFAULT
+#define THUMBS_ARE MIRYOKU_TR
+#define DEFAULT_THUMBS MIRYOKU_TR
 
 // pick the edge key set. normie, no kc, smart locks or test.
 // NORM, NOKC, SML, TEST
-#define EDGE_KEY_SET_IS SML
-#define DEFAULT_EDGE_SET SML
+#define EDGE_KEY_SET_IS NOKC
+#define DEFAULT_EDGE_SET NOKC
 
 // for the base layers which need a thumb cluster which takes a letter.
-#define HANDS_DOWN_LTR_THUMBS_ARE TH_LTR
+#define HANDS_DOWN_LTR_THUMBS_ARE MIRYOKU_TR
 #define MALTRON_LTR_THUMBS_ARE TH_LTR
 #define RSTHD_LTR_THUMBS_ARE TH_LTR
 
@@ -113,9 +113,9 @@
 
 // OLED STUFF.
 #define OLED_CUSTOM_ENABLE // custom oled here.
-//#define OLED_LOGO_ENABLE // turn on/off the logo.
+#define OLED_LOGO_ENABLE // turn on/off the logo.
 #define KEYLOGGER_ENABLE // 1500 bytes, track and print keypress info to oled.
-//#define SPLIT_LAYER_STATE_ENABLE  // to sync state between sides.
+#define SPLIT_LAYER_STATE_ENABLE  // to sync state between sides.
 
 // EXTENSIONS
 
@@ -124,8 +124,8 @@
 // #define COMBO_REF_LAYER_TWO_ENABLE
 // works if you know the number of your layer.
 // otherwise set and use them later.
-// #define COMBO_ONLY_FROM_LAYER 2
-// #define COMBO_REF_DEFAULT 2
+#define COMBO_ONLY_FROM_LAYER 9
+// #define COMBO_REF_DEFAULT 0
 
 
 // Console key logging for creation of heatmaps, etc.
@@ -145,9 +145,9 @@
 #define TAP_HOLD_ENABLE // tap for one thing, hold for tapping term to get another.
 //#define SWAPPER_ENABLE // enable swapper keys.
 #define NOT_DEAD_ENABLE // make undead versions (US_DQUO_ND) of dead keys.
-//#define ALT_SHIFT_ENABLE // alternate shift behaviors for existing keys.
+#define ALT_SHIFT_ENABLE // alternate shift behaviors for existing keys.
 //#define SEND_STRING_ENABLE // Turn on send string keys
-//#define SEND_UNICODE_ENABLE // Unicode must be enabled for this to work.
+#define SEND_UNICODE_ENABLE // Unicode must be enabled for this to work.
 
 
 // Turn on the base layers do not exceed 4 if doing two locales.
@@ -155,14 +155,14 @@
 // no longer work with the LT macro.
 
 // dvorak and relatives
-#define DVORAK_LAYER_ENABLE
+// #define DVORAK_LAYER_ENABLE
 //#define DVORAK_RLC_IU_LAYER_ENABLE
 //#define CAPEWELL_DVORAK_LAYER_ENABLE
 //#define AHEI_LAYER_ENABLE
 //#define BOO_LAYER_ENABLE
 
 // qwerty and derivitives
-//#define QWERTY_LAYER_ENABLE
+// #define QWERTY_LAYER_ENABLE
 //#define AZERTY_LAYER_ENABLE
 //#define WORKMAN_LAYER_ENABLE
 //#define NORMAN_LAYER_ENABLE
@@ -210,11 +210,11 @@
 #define HD_NEU_NARROW_LAYER_ENABLE
 //#define HD_REF_LAYER_ENABLE
 //#define HD_DASH_LAYER_ENABLE
-//#define HD_ELAN_LAYER_ENABLE
+// #define HD_ELAN_LAYER_ENABLE
 //#define HD_BRONZE_LAYER_ENABLE
 //#define HD_SILVER_LAYER_ENABLE
 //#define HD_PLATINUM_LAYER_ENABLE
-//#define HD_GOLD_LAYER_ENABLE
+// #define HD_GOLD_LAYER_ENABLE
 //#define HD_TITANIUM_LAYER_ENABLE
 
 // A compact optimot for 3x10.
@@ -238,13 +238,13 @@
 #define SYMBOL_LAYER_ENABLE
 #define NAV_LAYER_ENABLE
 // #define MOUSE_LAYER_ENABLE
-#define TOPROWS_LAYER_ENABLE
+// #define TOPROWS_LAYER_ENABLE
 // #define LAYERS_LAYER_ENABLE - defunct. always on.
 #define KEYPAD_LAYER_ENABLE
 //#define ADJUST_LAYER_ENABLE
-//#define RGB_LAYER_ENABLE
+#define RGB_LAYER_ENABLE
 //#define MEDIA_LAYER_ENABLE
-//#define FUNC_LAYER_ENABLE
+// #define FUNC_LAYER_ENABLE
 
 
 // define alternate thumb definitions for the transient layers.
@@ -262,7 +262,7 @@
 // A layer of dead keys
 // #define MORTE_LAYER_ENABLE
 // A layer of the most popular accented keys and dead keys
-#define ACCENTS_MORTE_LAYER_ENABLE
+// #define ACCENTS_MORTE_LAYER_ENABLE
 
 // Functional layer choices.
 /* configure the function layers. */
@@ -273,11 +273,11 @@
 
 /* nav */
 //#define NAV_FULL  // monolithic, two sided nav with mouse and arrows.
-#define NAV_FULL_LOCK_MODS // Replace left mouse buttons with lockmods.
+// #define NAV_FULL_LOCK_MODS // Replace left mouse buttons with lockmods.
 
 // Just the non mouse bits, with lock mods, n-shot mods on the left.
 // if mousekeys enabled, adds a mouse layer accessible via smart lock.
-// #define NAV_NO_MOUSE
+#define NAV_NO_MOUSE
 // #define NAV_MIRYOKU
 // #define NAV_MOUSE_MIRYOKU
 
@@ -317,7 +317,74 @@
 
 // #define TOPROWS_BKL_15_NUMS  // center row with Beakl15 order. 40123 76598.
 // #define TOPROWS_BKL_19_NUMS // Beakl 19 order: 32104  76598
-#define TOPROWS_MOD  // beakl 15 nums, oneshot and smart lock mods. no Fkeys.
+// #define TOPROWS_MOD  // beakl 15 nums, oneshot and smart lock mods. no Fkeys.
 
 
+#endif
+
+
+
+#ifdef RGB_MATRIX_ENABLE
+#   define RGB_MATRIX_KEYPRESSES // reacts to keypresses
+// #   define RGB_MATRIX_KEYRELEASES // reacts to keyreleases (instead of keypresses)
+#   define RGB_DISABLE_WHEN_USB_SUSPENDED // turn off effects when suspended
+#   define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+// #   define RGB_MATRIX_LED_PROCESS_LIMIT (RGB_MATRIX_LED_COUNT + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
+// #   define RGB_MATRIX_LED_FLUSH_LIMIT 16 // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
+// #    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 150 // limits maximum brightness of LEDs to 150 out of 255. Higher may cause the controller to crash. 
+#    define RGB_MATRIX_HUE_STEP 8
+#    define RGB_MATRIX_SAT_STEP 8
+#    define RGB_MATRIX_VAL_STEP 8
+#    define RGB_MATRIX_SPD_STEP 10
+
+/* Enable the animations you want/need.  You may need to enable only a small number of these because       *
+ * they take up a lot of space.  Enable and confirm that you can still successfully compile your firmware. */
+// RGB Matrix Animation modes. Explicitly enabled
+// For full list of effects, see:
+// https://docs.qmk.fm/#/feature_rgb_matrix?id=rgb-matrix-effects
+#    define ENABLE_RGB_MATRIX_ALPHAS_MODS
+#    define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
+#    define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
+#    define ENABLE_RGB_MATRIX_BREATHING
+#    define ENABLE_RGB_MATRIX_BAND_SAT
+#    define ENABLE_RGB_MATRIX_BAND_VAL
+#    define ENABLE_RGB_MATRIX_BAND_PINWHEEL_SAT
+#    define ENABLE_RGB_MATRIX_BAND_PINWHEEL_VAL
+#    define ENABLE_RGB_MATRIX_BAND_SPIRAL_SAT
+#    define ENABLE_RGB_MATRIX_BAND_SPIRAL_VAL
+#    define ENABLE_RGB_MATRIX_CYCLE_ALL
+#    define ENABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT
+#    define ENABLE_RGB_MATRIX_CYCLE_UP_DOWN
+#    define ENABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
+#    define ENABLE_RGB_MATRIX_CYCLE_OUT_IN
+#    define ENABLE_RGB_MATRIX_CYCLE_OUT_IN_DUAL
+#    define ENABLE_RGB_MATRIX_CYCLE_PINWHEEL
+#    define ENABLE_RGB_MATRIX_CYCLE_SPIRAL
+#    define ENABLE_RGB_MATRIX_DUAL_BEACON
+#    define ENABLE_RGB_MATRIX_RAINBOW_BEACON
+#    define ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS
+#    define ENABLE_RGB_MATRIX_RAINDROPS
+#    define ENABLE_RGB_MATRIX_JELLYBEAN_RAINDROPS
+#    define ENABLE_RGB_MATRIX_HUE_BREATHING
+#    define ENABLE_RGB_MATRIX_HUE_PENDULUM
+#    define ENABLE_RGB_MATRIX_HUE_WAVE
+#    define ENABLE_RGB_MATRIX_PIXEL_RAIN
+#    define ENABLE_RGB_MATRIX_PIXEL_FLOW
+#    define ENABLE_RGB_MATRIX_PIXEL_FRACTAL
+// enabled only if RGB_MATRIX_FRAMEBUFFER_EFFECTS is defined
+#    define ENABLE_RGB_MATRIX_TYPING_HEATMAP
+#    define ENABLE_RGB_MATRIX_DIGITAL_RAIN
+// enabled only of RGB_MATRIX_KEYPRESSES or RGB_MATRIX_KEYRELEASES is defined
+#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
+#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE
+#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
+#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE
+#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_CROSS
+#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTICROSS
+#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_NEXUS
+#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTINEXUS
+#    define ENABLE_RGB_MATRIX_SPLASH
+#    define ENABLE_RGB_MATRIX_MULTISPLASH
+#    define ENABLE_RGB_MATRIX_SOLID_SPLASH
+#    define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 #endif

@@ -90,7 +90,7 @@
 
 // miryoku thumbs, either its toprows or keypad for numbers.
 #define ___6_ERGO_THUMBS_miryoku_tr___                          \
-  ESC_MEDIA, SPACE_NAV, TAB_NAVM,  ENT_SYM, BSPC_TOPR, DEL_FUN
+  TAB_RGB, SPC_NAV, ENT_NUM, ENT_NUM, SPC_SYMB, BSPC_FUN
 #define ___6_ERGO_THUMBS_miryoku___                             \
   ESC_MEDIA, SPACE_NAV, TAB_NAVM,  ENT_SYM, BSPC_NUM, DEL_FUN
 // lose the tab key, put a letter where space was.

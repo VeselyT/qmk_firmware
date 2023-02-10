@@ -2,8 +2,8 @@
 // Default is current layer, or COMBO_REF_DEFAULT if set.
 // _COMBO_REF is the default if enabled.
 
-//COMBO_REF_LAYER(_DVORAK_BP, _COMBO_REF2)
-COMBO_REF_LAYER(_NAV, _NAV)
+//COMBO_REF_LAYER(_HD_ELAN_EN, _COMBO_REF)
+//COMBO_REF_LAYER(_NAV, _NAV)
 
 
 // COMBOS
@@ -41,7 +41,7 @@ COMB(LNAV,      SML_NAV,        CB_TH3, CB_TH4)
 
 COMB(_Q,  KC_Q, CB_3L2, CB_3L3)
 COMB(_X,  KC_X, CB_3L3, CB_3L4)
-COMB(_Z,  KC_Z, CB_3R3, CB_3R4)
+COMB(_Z,  KC_Z, CB_1L1, CB_1L2)
 
 // vertical thumb combos for the kyria
 //COMB(xxx,      xxx,            CB_TH2, CB_0TH1)

@@ -328,6 +328,7 @@ enum userspace_custom_keycodes {
 #define ACCENTS_CTL MT(MOD_LCTL, OSL_ACCENTS)
 #define ENT_SYM LT(LN_SYMB, KC_ENT)
 #define ENT_NAV LT(_NAV, KC_ENT)
+#define ENT_NUM LT(LN_KEYPAD, KC_ENT)
 #define ENT_TOPR LT(LN_TOPROWS, KC_ENT)
 
 #define ESC_TOPR LT(LN_TOPROWS, KC_ESC)
@@ -338,6 +339,7 @@ enum userspace_custom_keycodes {
 #define DEL_FUN LT(_FUN, KC_DEL)
 #define TAB_NAVM LT(_NAVm, KC_TAB)
 #define TAB_NUM LT(LN_KEYPAD, KC_TAB)
+#define TAB_RGB LT(_RGB, KC_TAB)
 #define I_SYMB LT(LN_SYMB, KC_I)
 
 #define SPC_NAVm   LT(_NAVm, KC_SPC)
@@ -360,6 +362,7 @@ enum userspace_custom_keycodes {
 #define BSPC_NUM   LT(LN_KEYPAD, KC_BSPC)
 #define BSPC_ALT   MT(MOD_LALT, KC_BSPC)
 #define BSPC_MEDIA LT(_MEDIA, KC_BSPC)
+#define BSPC_FUN   LT(_NAVm, KC_BSPC)
 
 #define KC_BKTAB    LSFT(KC_TAB)
 

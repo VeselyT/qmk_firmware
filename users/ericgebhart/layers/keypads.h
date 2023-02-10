@@ -43,7 +43,7 @@
 
 /* BEAKL27 (numpad layer): */
 /*   ↹+/\*=  yxz */
-/*    -523: ~FED */
+/*    -523: ~FED */ 
 /*    7.104 {CBA} */
 /*    ,698⏎  []% */
 
@@ -128,9 +128,9 @@
 
 // BEAKL 15 and a f1-f12 funcpad
 #define CARTE_KP_BKL_FUNC                       \
-  carte_de_map("    523:  F9-12",               \
-               "  -7.104  F5-8",                \
-               "   /798,  F1-4")
+  carte_de_map("   -523:  F9-12",               \
+               "   7.104  F5-8",                \
+               "   /698,  F1-4")
 
 #define ___KP_BKL_FUNC_3x10___                                          \
   CHUNK_LANG_MAP(___KEYPAD_BEAKL_L2___, _TRNS, ___4_FUNCPAD_1___,       \

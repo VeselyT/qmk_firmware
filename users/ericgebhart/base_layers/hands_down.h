@@ -37,7 +37,7 @@
                "   wfmpv  ;./jk")
 
 #define ___HD_NEU_NARROW___                                             \
-  LANG_MAP(_X, _C, _L, _D, _B,   _Z,      _U,     _O,      _Y, _Q,      \
+  LANG_MAP(_X_ESC, _C, _L, _D, _B,   _Z,      _U,     _O,      _Y, _Q,      \
            _R, _S, _N, _T, _G,   TL_COMM, _A,     _E,      _I, _H,      \
            _W, _F, _M, _P, _V,   _SCLN, TL_DOT, TL_SLSH, _J, _K)
 

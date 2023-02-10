@@ -26,6 +26,14 @@
 #endif
 
 // Corne
+#ifdef KEYBOARD_splitkb_aurora_corne
+#define BASE Base_3x6_3
+#define BASEt6 Base_3x6_3t6
+#define TRANS Transient_3x6_3
+#define BASE_COLS_IN_OUT 5_6 // 5, 5_6, 6
+#endif
+
+// Corne
 #ifdef KEYBOARD_crkbd
 #define BASE Base_3x6_3
 #define BASEt6 Base_3x6_3t6

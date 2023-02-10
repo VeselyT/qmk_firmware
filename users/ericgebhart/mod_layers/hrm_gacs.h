@@ -56,7 +56,7 @@
 // ROW1
 // LEFT.
 #define ROW1L_5_hrm_gacs(K01, K02, K03, K04, K05)       \
-  K01, K02, K03, LT(_NAV, K04), K05
+  K01, K02, K03, K04, K05
 // take and put an extra column in front. Mod K01 how you want it.
 #define ROW1L_6_hrm_gacs(K01, K02, K03, K04, K05, K06)  K01,    \
     ROW1L_5_hrm_gacs(K02, K03, K04, K05, K06)
@@ -120,7 +120,7 @@
 
 // RIGHT.
 #define ROW3R_5_hrm_gacs(K01, K02, K03, K04, K05)       \
-  K01, LT(_NAV, K02), K03, LT(LANG_N(_SYMB), K04), K05
+  K01, K02, K03, K04, K05
 // take and put an extra column in front. Mod K01 how you want it.
 #define ROW3R_6_hrm_gacs(K01, K02, K03, K04, K05, K06)  K01,    \
     ROW3R_5_hrm_gacs(K02, K03, K04, K05, K06)

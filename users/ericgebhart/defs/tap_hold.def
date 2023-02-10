@@ -1,5 +1,7 @@
 // tap or long tap for different key.
 
+TP_TPL(KC_X_ESC, KC_X, KC_ESC)
+
 // One key copy/paste
 TP_TPL(KC_CCCV, LCTL(KC_C), LCTL(KC_V))
 // New TaB/Window
